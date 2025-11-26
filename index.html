@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Studio Replica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gray: {
+                750: '#2b2d31',
+                850: '#1a1b1e',
+                950: '#0e0e10',
+              },
+              gemini: {
+                blue: '#4dabf7',
+                purple: '#b197fc',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <!-- PrismJS Theme (Tomorrow Night) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #0e0e10;
+        color: #e2e8f0;
+      }
+      /* Custom Scrollbar for a cleaner look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1b1e; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a4b50; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5a5b60; 
+      }
+      
+      /* Editor specific overrides for alignment */
+      .editor-font {
+        font-family: 'Fira Code', monospace;
+        font-size: 0.875rem; /* text-sm */
+        line-height: 1.5rem; /* leading-6 */
+        letter-spacing: 0px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client?deps=react@18.2.0",
+    "@google/genai": "https://esm.sh/@google/genai@0.1.0",
+    "jszip": "https://esm.sh/jszip@3.10.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<!-- PrismJS Core and Autoloader -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

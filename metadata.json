@@ -1,0 +1,7 @@
+{
+  "name": "AI Studio Replica",
+  "description": "A high-fidelity replica of the Google AI Studio interface, featuring model selection, system instructions, parameter tuning, and multimodal chat capabilities using the Gemini API.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
